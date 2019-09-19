@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/dev/work/clion_project/app/callbacks/BaseCallback.h
+string
+-
+../../task/task.h
+E:/dev/work/clion_project/task/task.h
+../../task/JNIThreadPool.h
+E:/dev/work/clion_project/task/JNIThreadPool.h
+
+E:/dev/work/clion_project/app/callbacks/TeamCallback.cpp
+TeamCallback.h
+E:/dev/work/clion_project/app/callbacks/TeamCallback.h
+iostream
+-
+
+E:/dev/work/clion_project/app/callbacks/TeamCallback.h
+BaseCallback.h
+E:/dev/work/clion_project/app/callbacks/BaseCallback.h
+
+E:/dev/work/clion_project/task/JNIThreadPool.h
+map
+-
+Task.h
+E:/dev/work/clion_project/task/Task.h
+
+E:/dev/work/clion_project/task/Task.h
+job.h
+E:/dev/work/clion_project/task/job.h
+
+E:/dev/work/clion_project/task/job.h
+pthread.h
+-
+
+E:/dev/work/clion_project/task/task.h
+job.h
+E:/dev/work/clion_project/task/job.h
+
