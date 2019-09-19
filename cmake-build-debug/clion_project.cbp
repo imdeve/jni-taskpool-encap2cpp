@@ -92,7 +92,7 @@
 		<Unit filename="E:/dev/work/clion_project/app/callbacks/TeamCallback.h">
 			<Option target="clion_project"/>
 		</Unit>
-		<Unit filename="E:/dev/work/clion_project/main.cpp">
+		<Unit filename="E:/dev/work/clion_project/main2.cpp">
 			<Option target="clion_project"/>
 		</Unit>
 		<Unit filename="E:/dev/work/clion_project/task/JNIThreadPool.cpp">

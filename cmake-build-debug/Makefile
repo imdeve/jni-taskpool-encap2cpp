@@ -176,32 +176,32 @@ app/callbacks/TeamCallback.cpp.s:
 	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.s
 .PHONY : app/callbacks/TeamCallback.cpp.s
 
-main.obj: main.cpp.obj
+main2.obj: main2.cpp.obj
 
-.PHONY : main.obj
+.PHONY : main2.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main2.cpp.obj:
+	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main2.cpp.obj
+.PHONY : main2.cpp.obj
 
-main.i: main.cpp.i
+main2.i: main2.cpp.i
 
-.PHONY : main.i
+.PHONY : main2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main.cpp.i
-.PHONY : main.cpp.i
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main2.cpp.i
+.PHONY : main2.cpp.i
 
-main.s: main.cpp.s
+main2.s: main2.cpp.s
 
-.PHONY : main.s
+.PHONY : main2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main.cpp.s
-.PHONY : main.cpp.s
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles\clion_project.dir\build.make CMakeFiles/clion_project.dir/main2.cpp.s
+.PHONY : main2.cpp.s
 
 task/JNIThreadPool.obj: task/JNIThreadPool.cpp.obj
 
@@ -299,9 +299,9 @@ help:
 	@echo ... app/callbacks/TeamCallback.obj
 	@echo ... app/callbacks/TeamCallback.i
 	@echo ... app/callbacks/TeamCallback.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... main2.obj
+	@echo ... main2.i
+	@echo ... main2.s
 	@echo ... task/JNIThreadPool.obj
 	@echo ... task/JNIThreadPool.i
 	@echo ... task/JNIThreadPool.s

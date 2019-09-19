@@ -9,7 +9,6 @@ CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../app/callback
 CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../task/JNIThreadPool.h
 CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../task/Task.h
 CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../task/job.h
-CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../task/task.h
 
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../app/callbacks/BaseCallback.h
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../app/callbacks/TeamCallback.cpp
@@ -17,15 +16,13 @@ CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../app/callback
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../task/JNIThreadPool.h
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../task/Task.h
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../task/job.h
-CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj: ../task/task.h
 
-CMakeFiles/clion_project.dir/main.cpp.obj: ../app/callbacks/BaseCallback.h
-CMakeFiles/clion_project.dir/main.cpp.obj: ../app/callbacks/TeamCallback.h
-CMakeFiles/clion_project.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/clion_project.dir/main.cpp.obj: ../task/JNIThreadPool.h
-CMakeFiles/clion_project.dir/main.cpp.obj: ../task/Task.h
-CMakeFiles/clion_project.dir/main.cpp.obj: ../task/job.h
-CMakeFiles/clion_project.dir/main.cpp.obj: ../task/task.h
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../app/callbacks/BaseCallback.h
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../app/callbacks/TeamCallback.h
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../main2.cpp
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../task/JNIThreadPool.h
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../task/Task.h
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../task/job.h
 
 CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: ../task/JNIThreadPool.cpp
 CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: ../task/JNIThreadPool.h

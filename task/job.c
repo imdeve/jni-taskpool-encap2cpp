@@ -50,7 +50,7 @@ static void workThreadExit(worker_t *worker){
 static int c = 0;
 static void *worker_function(void *ptr) {
     worker_t *worker = (worker_t *)ptr;
-
+    int wid =worker->wid;
     workThreadEnter(worker);
     job_t *job;
     c++;
@@ -71,6 +71,7 @@ static void *worker_function(void *ptr) {
         if (job == NULL) continue;
 
         /* Execute the job. */
+        job->wid =wid;
         job->job_function(job);
     }
     workThreadExit(worker);

@@ -1,32 +1,92 @@
+/*
 
 #include <iostream>
 #include <stdlib.h>
+#include "task/job.h"
 #include <unistd.h>
-#include "task/JNIThreadPool.h"
-#include "app/callbacks/TeamCallback.h"
 
 static bool  flag =true;
 
-static Task* newTask(){
-    Task *add = new  TeamCallback();
-    return  add;
+#define BZERO(buf,size) do {\
+        if (buf!=0) \
+        {   \
+            memset(buf,0,size);\
+        }\
+}while(0);
+
+typedef struct {
+    int a;
+    int b;
+}client_t;
+
+
+void client_job(job_t* job){
+    client_t* client = (client_t*) job->user_data;
+    if (client!= nullptr)
+    {
+        int res = (client->a)+(client->b);
+        std::cout << "client_job : result:" << res << std::endl;
+        //释放
+        free(client);
+        free(job);
+    }
+}
+client_t* spoutClentData(){
+    client_t *rClient = (client_t*)malloc(sizeof(client_t));
+    BZERO(rClient,sizeof(client_t));
+    rClient->b=10;
+    rClient->a=20;
+    return rClient;
 }
 
-int main() {
+job_t* spoutTask(){
+    job_t* job = (job_t*)malloc(sizeof(job_t));
+    BZERO(job,sizeof(job_t));
+    job->job_function = client_job;
+    job->user_data = spoutClentData();
 
-  JNIThreadPool pool;
-    pool.init(2);
+    return job;
+}
+
+static void onWorkInitFn(workqueue_t* wkqueue, int wid){
+
+    printf("worker   ptr init :%p wid=%d \n",wkqueue->workDict[wid],wid);
+   */
+/* if (wid%2==0)
+    {
+        wkqueue->workDict[wid]->terminate =1;
+    }*//*
+
+    //usleep(1000*3000);
+}
+
+static void onWorkExitFn(workqueue_t* wkqueue, int wid){
+
+    printf("worker ptr exit :%p wid=%d \n",wkqueue->workDict[wid],wid);
+}
+
+int main2() {
+
+    workqueue_t wq;
+    BZERO(&wq, sizeof(workqueue_t));
+    threadpool_init(&wq,2);
+    wq.onWorkInitFn =  &onWorkInitFn ;
+    wq.onWorkDestoryFn =  &onWorkExitFn;
+    threadpool_init(&wq,10);
+
+
 
     while(flag)
     {
-        pool.addTask(newTask());
-        usleep(500);
+
+        workqueue_add_job(&wq,spoutTask());
+        usleep(500*1000);
+
     }
 
 
-   /* BaseCallback* t= (BaseCallback*) newTask();
-    delete t;*/
-
+    threadpool_exit(&wq);
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
+*/

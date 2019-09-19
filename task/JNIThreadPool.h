@@ -16,19 +16,23 @@ class JNIEnv
 
 };
 class JavaVM{
+public:
+   inline void DetachCurrentThread(){};
+   inline void AttachCurrentThread(JNIEnv** env,int a)
+   {
+   }
 
 }
 ;
 class JNIThreadPool :public ThreadPool {
 public:
     JNIThreadPool();
-    void init(int numWorkers);
+    void init(JavaVM *jvm,int numWorkers);
     ~JNIThreadPool();
-    JNIEnv* findEnv(int threadId);
+    JNIEnv* findEnv(int wid);
 protected:
     virtual  void  onWorkThreadEnter(workqueue_t *wq, int wid);
     virtual  void  onWorkThreadExit(workqueue_t *wq, int wid);
-    void           deleteEnv();
 protected:
     JavaVM *jvm;
 };

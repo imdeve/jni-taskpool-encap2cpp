@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/clion_project.dir/main.cpp.obj"
+  "CMakeFiles/clion_project.dir/main2.cpp.obj"
   "CMakeFiles/clion_project.dir/task/job.c.obj"
   "CMakeFiles/clion_project.dir/task/Task.cpp.obj"
   "CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj"

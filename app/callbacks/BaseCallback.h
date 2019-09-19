@@ -7,7 +7,7 @@
 
 #include <string>
 //#include <jni.h>
-#include "../../task/task.h"
+#include "../../task/Task.h"
 #include "../../task/JNIThreadPool.h"
 
 class JNIEnv;
@@ -27,9 +27,9 @@ protected:
     virtual void onInPool(ThreadPool *threadPool);
     virtual int onDo();
     virtual int onPostDo();
-    void setEnv(JNIEnv *env);
-    virtual int process();
     virtual int onRelease();
+    void onExit();
+
 private:
     void release();
 public:

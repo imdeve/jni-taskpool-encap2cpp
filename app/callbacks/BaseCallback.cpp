@@ -10,42 +10,30 @@ std::string BaseCallback::getResultType() {
     return "";
 }
 
-void BaseCallback::setEnv(JNIEnv *env) {
-     this->env =  env;
-}
-
 void BaseCallback::onInPool(ThreadPool *threadPool) {
      this->pool = (JNIThreadPool*)threadPool;
 }
 
 int BaseCallback::onPreDo() {
     Task::onPreDo();
-    int currThreadId = pthread_self();
-    JNIEnv* e= this->pool->findEnv(currThreadId);
-    this->env= e;
-
+  //  JNIEnv* e= this->pool->findEnv(this->getWid());
+  //  this->env= e;
     return 0;
 }
 
 int BaseCallback::onDo() {
     Task::onDo();
-
+    std::cout << "BaseCallback::onDo;" << std::endl;
     return 0;
 }
 
-int BaseCallback::process() {
-    Task::process();
-    this->release();
-    return 0;
-}
 
 void BaseCallback::release() {
     this->onRelease();
-    delete this;
 }
 
 int BaseCallback::onRelease() {
-    std::cout << "BaseCallback::~onRelease()   delete (Task*)this; delete (Task*)this; delete (Task*)this;" << std::endl;
+    std::cout << "BaseCallback::~onRelease()  ..." << std::endl;
     return 0;
 }
 
@@ -54,6 +42,15 @@ int BaseCallback::onPostDo() {
 
 
     return 0;
+}
+void BaseCallback::onExit() {
+    //释放自己资源
+    this->release();
+    //调用父类释放
+     Task::onExit();
+     //最终内存释放
+     std::cout << "BaseCallback 释放onExit..释放了xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.." << std::endl;
+     delete this;
 }
 
 BaseCallback::~BaseCallback() {

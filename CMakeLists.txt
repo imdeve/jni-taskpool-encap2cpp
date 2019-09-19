@@ -11,4 +11,4 @@ set (CALLBACKS  app/callbacks/BaseCallback.cpp app/callbacks/BaseCallback.h
 
 
 
-add_executable(clion_project main.cpp ${TASK} ${CALLBACKS})
+add_executable(clion_project main2.cpp ${TASK} ${CALLBACKS})

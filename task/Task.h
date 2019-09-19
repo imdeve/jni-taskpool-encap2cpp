@@ -22,11 +22,15 @@ protected:
     virtual int onDo();
     virtual int onPostDo();
     virtual void onInPool(ThreadPool *threadPool);
-    virtual int process();
+
     virtual void onExit();
+
+    int getWid();
+
 
 private:
     void exit();
+    virtual int process();
     static void onJobPorcess(job_t* job);
 
 };

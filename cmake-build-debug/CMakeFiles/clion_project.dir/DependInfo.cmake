@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/dev/work/clion_project/app/callbacks/BaseCallback.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj"
   "E:/dev/work/clion_project/app/callbacks/TeamCallback.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj"
-  "E:/dev/work/clion_project/main.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/main.cpp.obj"
+  "E:/dev/work/clion_project/main2.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/main2.cpp.obj"
   "E:/dev/work/clion_project/task/JNIThreadPool.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj"
   "E:/dev/work/clion_project/task/Task.cpp" "E:/dev/work/clion_project/cmake-build-debug/CMakeFiles/clion_project.dir/task/Task.cpp.obj"
   )

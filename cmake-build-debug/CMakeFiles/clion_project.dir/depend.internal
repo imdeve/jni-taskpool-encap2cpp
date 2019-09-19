@@ -10,7 +10,6 @@ CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj
  E:/dev/work/clion_project/task/JNIThreadPool.h
  E:/dev/work/clion_project/task/Task.h
  E:/dev/work/clion_project/task/job.h
- E:/dev/work/clion_project/task/task.h
 CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj
  E:/dev/work/clion_project/app/callbacks/BaseCallback.h
  E:/dev/work/clion_project/app/callbacks/TeamCallback.cpp
@@ -18,15 +17,13 @@ CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj
  E:/dev/work/clion_project/task/JNIThreadPool.h
  E:/dev/work/clion_project/task/Task.h
  E:/dev/work/clion_project/task/job.h
- E:/dev/work/clion_project/task/task.h
-CMakeFiles/clion_project.dir/main.cpp.obj
+CMakeFiles/clion_project.dir/main2.cpp.obj
  E:/dev/work/clion_project/app/callbacks/BaseCallback.h
  E:/dev/work/clion_project/app/callbacks/TeamCallback.h
- E:/dev/work/clion_project/main.cpp
+ E:/dev/work/clion_project/main2.cpp
  E:/dev/work/clion_project/task/JNIThreadPool.h
  E:/dev/work/clion_project/task/Task.h
  E:/dev/work/clion_project/task/job.h
- E:/dev/work/clion_project/task/task.h
 CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj
  E:/dev/work/clion_project/task/JNIThreadPool.cpp
  E:/dev/work/clion_project/task/JNIThreadPool.h

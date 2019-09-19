@@ -3,7 +3,7 @@
 //
 
 #include <unistd.h>
-#include <stdlib.h>
+#include <string.h>
 #include <memory>
 #include "Task.h"
 
@@ -12,7 +12,7 @@
 #define  BZERO(buf,size)\
          memset(buf,0,size);
 
-Task::Task(){
+Task::Task():job(0){
     this->job = (job_t*) malloc(sizeof(job_t));
     BZERO(this->job,sizeof(job_t));
     this->job->user_data = this;
@@ -22,7 +22,6 @@ void Task::onJobPorcess(job_t *job) {
     Task * qthis = (Task*)job->user_data;
     qthis->process();
     qthis->exit();
-
 }
 void Task::exit(){
     //release
@@ -31,7 +30,7 @@ void Task::exit(){
         free(this->job);
         this->job =0;
     }
-    this->onExit();
+   this->onExit();
 }
 
 int Task::onPreDo() {
@@ -45,7 +44,7 @@ void Task::onExit() {
 }
 
 Task::~Task() {
-    std::cout << "Task::~Task() destroy" << std::endl;
+    std::cout << "Task::~Task() 释放了xxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << std::endl;
 }
 
 int Task::onDo() {
@@ -64,7 +63,13 @@ int Task::process() {
      this->onPostDo();
     return 0;
 }
-
+int Task::getWid() {
+    if (this->job!=0)
+    {
+        return this->job->wid;
+    }
+    return -1;
+}
 void Task::onInPool(ThreadPool *threadPool) {
 
 }

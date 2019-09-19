@@ -56,18 +56,18 @@ include CMakeFiles/clion_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/clion_project.dir/flags.make
 
-CMakeFiles/clion_project.dir/main.cpp.obj: CMakeFiles/clion_project.dir/flags.make
-CMakeFiles/clion_project.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clion_project.dir/main.cpp.obj"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clion_project.dir\main.cpp.obj -c E:\dev\work\clion_project\main.cpp
+CMakeFiles/clion_project.dir/main2.cpp.obj: CMakeFiles/clion_project.dir/flags.make
+CMakeFiles/clion_project.dir/main2.cpp.obj: ../main2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clion_project.dir/main2.cpp.obj"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clion_project.dir\main2.cpp.obj -c E:\dev\work\clion_project\main2.cpp
 
-CMakeFiles/clion_project.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clion_project.dir/main.cpp.i"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\work\clion_project\main.cpp > CMakeFiles\clion_project.dir\main.cpp.i
+CMakeFiles/clion_project.dir/main2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clion_project.dir/main2.cpp.i"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\work\clion_project\main2.cpp > CMakeFiles\clion_project.dir\main2.cpp.i
 
-CMakeFiles/clion_project.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/main.cpp.s"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\main.cpp -o CMakeFiles\clion_project.dir\main.cpp.s
+CMakeFiles/clion_project.dir/main2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/main2.cpp.s"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\main2.cpp -o CMakeFiles\clion_project.dir\main2.cpp.s
 
 CMakeFiles/clion_project.dir/task/job.c.obj: CMakeFiles/clion_project.dir/flags.make
 CMakeFiles/clion_project.dir/task/job.c.obj: ../task/job.c
@@ -136,7 +136,7 @@ CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.s: cmake_force
 
 # Object files for target clion_project
 clion_project_OBJECTS = \
-"CMakeFiles/clion_project.dir/main.cpp.obj" \
+"CMakeFiles/clion_project.dir/main2.cpp.obj" \
 "CMakeFiles/clion_project.dir/task/job.c.obj" \
 "CMakeFiles/clion_project.dir/task/Task.cpp.obj" \
 "CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj" \
@@ -146,7 +146,7 @@ clion_project_OBJECTS = \
 # External object files for target clion_project
 clion_project_EXTERNAL_OBJECTS =
 
-clion_project.exe: CMakeFiles/clion_project.dir/main.cpp.obj
+clion_project.exe: CMakeFiles/clion_project.dir/main2.cpp.obj
 clion_project.exe: CMakeFiles/clion_project.dir/task/job.c.obj
 clion_project.exe: CMakeFiles/clion_project.dir/task/Task.cpp.obj
 clion_project.exe: CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj
