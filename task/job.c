@@ -14,6 +14,7 @@ static void freeWorker(worker_t *worker){
             worker->workqueue->onWorkDestoryFn(worker->workqueue,worker->wid);
         }
         free(worker);
+        printf(" ..freeWorker..id=%d. \n",worker->wid);
     }
 }
 
@@ -94,26 +95,28 @@ static int workqueue_init(workqueue_t *workqueue, int numWorkers) {
     memcpy(&workqueue->jobs_mutex, &blank_mutex, sizeof(workqueue->jobs_mutex));
     memcpy(&workqueue->jobs_cond, &blank_cond, sizeof(workqueue->jobs_cond));
 
-    workqueue->workDict = (struct worker **)malloc(numWorkers * sizeof(struct worker *));
-    memset(workqueue->workDict, 0, numWorkers * sizeof(struct worker *));
-
-    for (i = 0; i < numWorkers; i++) {
-        if ((worker = (worker_t*) malloc(sizeof(worker_t))) == NULL) {
-            perror("Failed to allocate all workers");
-            return 1;
+    if (numWorkers>0) {
+        workqueue->workDict = (struct worker **) malloc(numWorkers * sizeof(struct worker *));
+        memset(workqueue->workDict, 0, numWorkers * sizeof(struct worker *));
+        for (i = 0; i < numWorkers; i++) {
+            if ((worker = (worker_t *) malloc(sizeof(worker_t))) == NULL) {
+                perror("Failed to allocate all workers");
+                threadpool_exit(workqueue);
+                return 1;
+            }
+            memset(worker, 0, sizeof(worker_t));
+            worker->wid = i;
+            workqueue->workDict[i] = worker;
+            worker->workqueue = workqueue;
+            initWorker(worker);
+            if (pthread_create(&worker->thread, NULL, worker_function, (void *) worker)) {
+                perror("Failed to start all worker threads");
+                //    freeWorker(worker); free in threadpool_exit
+                threadpool_exit(workqueue);
+                return 1;
+            }
+            LL_ADD(worker, worker->workqueue->workers);
         }
-        memset(worker, 0, sizeof(worker_t));
-        worker->wid = i;
-        workqueue->workDict[i]=worker;
-        worker->workqueue = workqueue;
-        initWorker(worker);
-        if (pthread_create(&worker->thread, NULL, worker_function, (void *)worker)) {
-            perror("Failed to start all worker threads");
-            freeWorker(worker);
-            return 1;
-        }
-
-        LL_ADD(worker, worker->workqueue->workers);
     }
 
     return 0;
@@ -164,8 +167,19 @@ int threadpool_exit(workqueue_t *workqueue)
         }
         if (workqueue->workDict!=0 && workqueue->workNum>0)
         {
+
+            int i=0;
+            //release worker
+            for  (;i<workqueue->workNum;++i){
+                        if (workqueue->workDict[i]!=0)
+                        {
+                            freeWorker(workqueue->workDict[i]);
+                            workqueue->workDict[i]=0;
+                        }
+            }
             free(workqueue->workDict);
             workqueue->workDict =0;
+            printf("threadpool_exit .......workqueue->workDict has free it \n");
         }
     }
     return 0;

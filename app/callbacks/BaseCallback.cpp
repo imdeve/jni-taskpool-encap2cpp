@@ -23,7 +23,7 @@ int BaseCallback::onPreDo() {
 
 int BaseCallback::onDo() {
     Task::onDo();
-    std::cout << "BaseCallback::onDo;" << std::endl;
+   // std::cout << "BaseCallback::onDo;" << std::endl;
     return 0;
 }
 
@@ -33,7 +33,7 @@ void BaseCallback::release() {
 }
 
 int BaseCallback::onRelease() {
-    std::cout << "BaseCallback::~onRelease()  ..." << std::endl;
+  //  std::cout << "BaseCallback::~onRelease()  ..." << std::endl;
     return 0;
 }
 
@@ -49,11 +49,11 @@ void BaseCallback::onExit() {
     //调用父类释放
      Task::onExit();
      //最终内存释放
-     std::cout << "BaseCallback 释放onExit..释放了xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.." << std::endl;
+ //    std::cout << "BaseCallback onExit..xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.." << std::endl;
      delete this;
 }
 
 BaseCallback::~BaseCallback() {
 
-     std::cout << "BaseCallback::~BaseCallback() " << std::endl;
+    // std::cout << "BaseCallback::~BaseCallback() " << std::endl;
 }

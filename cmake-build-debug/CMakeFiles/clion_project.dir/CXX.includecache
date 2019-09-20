@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/dev/work/clion_project/app/callbacks/BaseCallback.cpp
-iostream
--
-BaseCallback.h
-E:/dev/work/clion_project/app/callbacks/BaseCallback.h
-../../task/JNIThreadPool.h
-E:/dev/work/clion_project/task/JNIThreadPool.h
-
 E:/dev/work/clion_project/app/callbacks/BaseCallback.h
 string
 -
@@ -22,23 +14,27 @@ E:/dev/work/clion_project/task/Task.h
 ../../task/JNIThreadPool.h
 E:/dev/work/clion_project/task/JNIThreadPool.h
 
+E:/dev/work/clion_project/app/callbacks/TeamCallback.h
+BaseCallback.h
+E:/dev/work/clion_project/app/callbacks/BaseCallback.h
+
+E:/dev/work/clion_project/main2.cpp
+iostream
+-
+stdlib.h
+-
+unistd.h
+-
+task/JNIThreadPool.h
+E:/dev/work/clion_project/task/JNIThreadPool.h
+app/callbacks/TeamCallback.h
+E:/dev/work/clion_project/app/callbacks/TeamCallback.h
+
 E:/dev/work/clion_project/task/JNIThreadPool.h
 map
 -
 Task.h
 E:/dev/work/clion_project/task/Task.h
-
-E:/dev/work/clion_project/task/Task.cpp
-unistd.h
--
-string.h
--
-memory
--
-Task.h
-E:/dev/work/clion_project/task/Task.h
-iostream
--
 
 E:/dev/work/clion_project/task/Task.h
 job.h

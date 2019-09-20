@@ -16,6 +16,8 @@
  * **/
 
 class TeamCallback : public BaseCallback {
+public:
+    int id;
 protected:
      std::string getResultType();
      int onPreDo();

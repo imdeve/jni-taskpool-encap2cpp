@@ -18,6 +18,7 @@ public:
     virtual ~Task();
 
 protected:
+    int wid;
     virtual int onPreDo();
     virtual int onDo();
     virtual int onPostDo();

@@ -69,18 +69,18 @@ CMakeFiles/clion_project.dir/main2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/main2.cpp.s"
 	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\main2.cpp -o CMakeFiles\clion_project.dir\main2.cpp.s
 
-CMakeFiles/clion_project.dir/task/job.c.obj: CMakeFiles/clion_project.dir/flags.make
-CMakeFiles/clion_project.dir/task/job.c.obj: ../task/job.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/clion_project.dir/task/job.c.obj"
-	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\clion_project.dir\task\job.c.obj   -c E:\dev\work\clion_project\task\job.c
+CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: CMakeFiles/clion_project.dir/flags.make
+CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: ../task/JNIThreadPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.obj -c E:\dev\work\clion_project\task\JNIThreadPool.cpp
 
-CMakeFiles/clion_project.dir/task/job.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/clion_project.dir/task/job.c.i"
-	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\dev\work\clion_project\task\job.c > CMakeFiles\clion_project.dir\task\job.c.i
+CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.i"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\work\clion_project\task\JNIThreadPool.cpp > CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.i
 
-CMakeFiles/clion_project.dir/task/job.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/clion_project.dir/task/job.c.s"
-	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\dev\work\clion_project\task\job.c -o CMakeFiles\clion_project.dir\task\job.c.s
+CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.s"
+	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\task\JNIThreadPool.cpp -o CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.s
 
 CMakeFiles/clion_project.dir/task/Task.cpp.obj: CMakeFiles/clion_project.dir/flags.make
 CMakeFiles/clion_project.dir/task/Task.cpp.obj: ../task/Task.cpp
@@ -95,18 +95,18 @@ CMakeFiles/clion_project.dir/task/Task.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/task/Task.cpp.s"
 	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\task\Task.cpp -o CMakeFiles\clion_project.dir\task\Task.cpp.s
 
-CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: CMakeFiles/clion_project.dir/flags.make
-CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj: ../task/JNIThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.obj -c E:\dev\work\clion_project\task\JNIThreadPool.cpp
+CMakeFiles/clion_project.dir/task/job.c.obj: CMakeFiles/clion_project.dir/flags.make
+CMakeFiles/clion_project.dir/task/job.c.obj: ../task/job.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\dev\work\clion_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/clion_project.dir/task/job.c.obj"
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\clion_project.dir\task\job.c.obj   -c E:\dev\work\clion_project\task\job.c
 
-CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.i"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\dev\work\clion_project\task\JNIThreadPool.cpp > CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.i
+CMakeFiles/clion_project.dir/task/job.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/clion_project.dir/task/job.c.i"
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\dev\work\clion_project\task\job.c > CMakeFiles\clion_project.dir\task\job.c.i
 
-CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.s"
-	D:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\dev\work\clion_project\task\JNIThreadPool.cpp -o CMakeFiles\clion_project.dir\task\JNIThreadPool.cpp.s
+CMakeFiles/clion_project.dir/task/job.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/clion_project.dir/task/job.c.s"
+	D:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\dev\work\clion_project\task\job.c -o CMakeFiles\clion_project.dir\task\job.c.s
 
 CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: CMakeFiles/clion_project.dir/flags.make
 CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj: ../app/callbacks/BaseCallback.cpp
@@ -137,9 +137,9 @@ CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.s: cmake_force
 # Object files for target clion_project
 clion_project_OBJECTS = \
 "CMakeFiles/clion_project.dir/main2.cpp.obj" \
-"CMakeFiles/clion_project.dir/task/job.c.obj" \
-"CMakeFiles/clion_project.dir/task/Task.cpp.obj" \
 "CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj" \
+"CMakeFiles/clion_project.dir/task/Task.cpp.obj" \
+"CMakeFiles/clion_project.dir/task/job.c.obj" \
 "CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj" \
 "CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj"
 
@@ -147,9 +147,9 @@ clion_project_OBJECTS = \
 clion_project_EXTERNAL_OBJECTS =
 
 clion_project.exe: CMakeFiles/clion_project.dir/main2.cpp.obj
-clion_project.exe: CMakeFiles/clion_project.dir/task/job.c.obj
-clion_project.exe: CMakeFiles/clion_project.dir/task/Task.cpp.obj
 clion_project.exe: CMakeFiles/clion_project.dir/task/JNIThreadPool.cpp.obj
+clion_project.exe: CMakeFiles/clion_project.dir/task/Task.cpp.obj
+clion_project.exe: CMakeFiles/clion_project.dir/task/job.c.obj
 clion_project.exe: CMakeFiles/clion_project.dir/app/callbacks/BaseCallback.cpp.obj
 clion_project.exe: CMakeFiles/clion_project.dir/app/callbacks/TeamCallback.cpp.obj
 clion_project.exe: CMakeFiles/clion_project.dir/build.make

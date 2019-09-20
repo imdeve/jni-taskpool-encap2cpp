@@ -30,11 +30,16 @@ void Task::exit(){
         free(this->job);
         this->job =0;
     }
-   this->onExit();
+    //endout
+    this->onExit();
 }
 
 int Task::onPreDo() {
-
+   //开始执行前，获得其workerid
+    if (this->job!=0)
+    {
+        this->wid = this->job->wid;
+    }
 
 return 0;
 }
@@ -64,11 +69,7 @@ int Task::process() {
     return 0;
 }
 int Task::getWid() {
-    if (this->job!=0)
-    {
-        return this->job->wid;
-    }
-    return -1;
+    return this->wid;
 }
 void Task::onInPool(ThreadPool *threadPool) {
 

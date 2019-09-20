@@ -5,29 +5,30 @@
 #include "task/JNIThreadPool.h"
 #include "app/callbacks/TeamCallback.h"
 
-static bool  flag =true;
-
-static Task* newTask(){
-    Task *add = new  TeamCallback();
+static Task* newTask(int id){
+    TeamCallback *add = new  TeamCallback();
+    add->id = id;
     return  add;
 }
 
-int main() {
 
-  JNIThreadPool pool;
-    pool.init(0,2);
+void test(){
+    JNIThreadPool pool;
+    pool.init(0,100);
 
-    while(flag)
+    for (int i=0;i<1000000;i++)
     {
-        pool.addTask(newTask());
-        usleep(500);
+        pool.addTask(newTask(i));
     }
 
-
- BaseCallback* t= (BaseCallback*) newTask();
-    delete t;
-
-
     std::cout << "Hello, World!" << std::endl;
+    getchar();
+
+}
+
+int main() {
+    test();
+
+    sleep(50000);
     return 0;
 }
